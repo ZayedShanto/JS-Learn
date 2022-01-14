@@ -1,5 +1,7 @@
 # JS-Learn
 
+[abcd](#js-statements)
+
 ## Output
 JS can display output in many ways.Some of them are:
 - ## innerHTML
