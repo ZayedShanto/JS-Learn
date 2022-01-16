@@ -282,3 +282,6 @@ JS can display output in many ways.Some of them are:
      synta error
      
   ```
+  
+  ## const variable
+  const is similar to let variable.but it must be assigned at time of declaration.
