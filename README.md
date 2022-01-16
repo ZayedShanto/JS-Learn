@@ -284,4 +284,20 @@ JS can display output in many ways.Some of them are:
   ```
   
   ## const variable
-  const is similar to let variable.but it must be assigned at time of declaration.
+  const is similar to let variable.but it must be assigned at time of declaration.const can not be reassigned .
+  
+  #### Example
+  
+  ```js
+  const x = 2;
+  const y = 3;
+  const z = x+y;
+  z = 10
+  console.log(z);
+  
+  ```
+  
+  ```
+   Uncaught TypeError: Assignment to constant variable
+  
+  ```
