@@ -377,3 +377,35 @@ console.log(x);
  output: undefined
  
 ``` 
+
+
+## Object
+
+#### Example
+
+```js
+  const bike = {
+
+     name: "Yamaha",
+     model: "R15",
+     color: "grey",
+     start: function(){
+         console.log("bike has started");     
+     }
+  };
+
+  console.log(bike.model);
+  console.log(bike["model"]);
+  bike.start();
+
+```
+
+```
+output:
+R15
+R15
+bike has started
+
+```
+here bike is the object.
+properties:name,model,color
