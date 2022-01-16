@@ -338,3 +338,24 @@ JS can display output in many ways.Some of them are:
   and 5 is the argement
  
  ```
+ 
+ ## Function return
+ inside function when JS reaches **return** statement it stops executing.
+ 
+ #### Example
+ 
+ ````js
+  function sleep(x, y){
+    return x*y;
+    console.log("hello");
+  }
+
+ let x = sleep(5,5);
+ console.log(x);
+
+```
+
+```
+  output: 25
+  
+```  
