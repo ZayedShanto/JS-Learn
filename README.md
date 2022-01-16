@@ -301,3 +301,22 @@ JS can display output in many ways.Some of them are:
    Uncaught TypeError: Assignment to constant variable
   
   ```
+
+
+  ## Function
+  function is a block of code.It can perform particular task. It has to be called to perform.
+  
+  #### Example
+  
+  ```js
+  function sleep(){
+    console.log("xyz");
+  }
+  sleep();
+ 
+ ```
+ 
+ ```
+  outout: xyz
+  
+ ``` 
