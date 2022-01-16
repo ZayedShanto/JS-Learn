@@ -359,3 +359,21 @@ JS can display output in many ways.Some of them are:
   output: 25
   
 ```  
+If return statement is not added inside function by default it returns **undefined** and exits from function
+
+#### Example
+
+```js
+function sleep(x, y){
+    console.log("hello");
+}
+
+let x = sleep(5,5);
+console.log(x);
+
+```
+
+```
+ output: undefined
+ 
+``` 
