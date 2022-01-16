@@ -344,7 +344,7 @@ JS can display output in many ways.Some of them are:
  
  #### Example
  
- ````js
+ ```js
   function sleep(x, y){
     return x*y;
     console.log("hello");
