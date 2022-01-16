@@ -199,7 +199,11 @@ JS can display output in many ways.Some of them are:
   ```
   ## Redeclearing 
    var can be redeclearedis  anywhere in a program
-   #### Example
+  
+  
+  #### Example
+    
+    
     ```js
      var x = 2;
      // Now x is 2
@@ -211,6 +215,8 @@ JS can display output in many ways.Some of them are:
    redeclaring let in the same block is NOT allowed
    
    #### Example
+   
+   
      ```js
       var x = 2;    // Allowed
       let x = 3;    // Not allowed
