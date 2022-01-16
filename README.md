@@ -320,3 +320,21 @@ JS can display output in many ways.Some of them are:
   outout: xyz
   
  ``` 
+ 
+ variables inside function parentheses () are called **parameters**. And values received by function when it is invoked is **arguments**
+ 
+ #### Example
+ 
+ ```js
+ function sleep(x, y){
+    console.log(x);
+ }
+
+ sleep(5);
+ 
+ ```
+ ```
+  here x and y are parameters 
+  and 5 is the argement
+ 
+ ```
