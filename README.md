@@ -499,7 +499,9 @@ but comparing two objects will always return false
   console.log(a);
   
   ```
-   outout:
+  
+  ```
+  outout:
    Banan
    Banana
    Banana, Kiwi
