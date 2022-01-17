@@ -407,5 +407,7 @@ R15
 bike has started
 
 ```
-here bike is the object.
+here bike is the object
 properties:name,model,color
+
+## Events
