@@ -563,8 +563,23 @@ but comparing two objects will always return false
    ```
     
     
-     here the replace() doesn't change the string in x variable
-     it returns a new string
+  here the replace() doesn't change the string in x variable
+  it returns a new string
+     
+   - ## replace() method only replace the first match
+     
+   #### Example
+   
+   ```js
+    let x = "I like coke and coke";
+    let y = x.replace("coke" , "pepsi");
+    console.log(y);
     
+   ```
+   
+   ```
+   output:
+     I like pepsi and coke
+   ```
     
    
