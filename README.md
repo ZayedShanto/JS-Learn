@@ -466,3 +466,20 @@ In JS strings are written inside quotes
  
  ```
  
+== only compares value thats why first output is true
+=== compares value+type so the secodnd output is false
+but comparing two objects will always return false
+
+```js
+ let x = new String("batman");
+ let y = new String("batman");
+
+ console.log(x == y);
+ console.log(x === y);
+
+```
+
+```
+  false
+  false
+```  
