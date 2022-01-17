@@ -524,3 +524,20 @@ but comparing two objects will always return false
     
    ``` 
     
+   - ## substr()
+   - It's also similar to slice() but it's second parameter is the length of the extracted string
+   
+   #### Example 
+   
+   ```js
+    let x = "Apple, Banana, Kiwi";
+    let y = x.substr(7 , 6);
+    console.log(y);
+    
+   ```
+   
+   ```
+     output: banana
+     
+   ```  
+
