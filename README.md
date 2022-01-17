@@ -599,3 +599,21 @@ but comparing two objects will always return false
     output:I LIKE COKE 
    
    ``` 
+   
+   - ## toLowerCase()
+   - converts strings to lower case
+
+   #### Example
+   
+   ```js
+    let x = "I LIKE COKE";
+    let y = x.toLowerCase();
+    console.log(y);
+   
+   ```
+   
+   ```
+    output:I like coke
+   
+   ``` 
+    
