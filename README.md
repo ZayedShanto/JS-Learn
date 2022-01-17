@@ -485,4 +485,24 @@ but comparing two objects will always return false
 ```  
 
 ## String methods
+  - ## String slice()
+  - slice() method cuts a part of a string and returns ii a new string
+  
+  ```js
+  let x = "Apple, Banana, Kiwi";
+  let y = x.slice(-13 , -7);
+  let z = x.slice(7 , 13);
+  let a = x.slice(7);
+
+  console.log(y);
+  console.log(z);
+  console.log(a);
+  
+  ```
+   outout:
+   Banan
+   Banana
+   Banana, Kiwi
  
+  ```
+    
