@@ -446,3 +446,23 @@ In JS strings are written inside quotes
   Among the supercars \Ferrari\ is the best
 
  ```
+ 
+ We can create strings as object using **new** keyword
+ 
+ #### Example
+ 
+ ```js
+  let x = "batman";
+  let y = new String("batman");
+
+  console.log(x == y);
+  console.log(x === y);
+ 
+ ```
+ 
+ ```
+  true
+  false
+ 
+ ```
+ 
