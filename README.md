@@ -411,3 +411,20 @@ here bike is the object
 properties:name,model,color
 
 ## Events
+
+## Strings 
+In JS strings are written inside quotes
+#### Example
+
+```js
+ let x = "Among the supercars 'Ferrari' is the best"; /allowed
+ let x = 'Among the supercars "Ferrari" is the best'; /allowed
+ let x = "Among the supercars "Ferrari" is the best"; / not allowed
+ 
+ ```
+ 
+ ```
+ same quotes not allowed
+ 
+ ```
+ 
