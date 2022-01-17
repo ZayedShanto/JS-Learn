@@ -541,3 +541,24 @@ but comparing two objects will always return false
      
    ```  
 
+   - ## replace()
+   - with this method we can replace a value with another from a string
+   - this method has two parameters
+   - first parameter takes the value which will be changed
+   - the second parameter takes the new value
+   
+   ```js
+    let x = "I love coke";
+    let y = x.replace("love" , "like");
+    console.log(y);
+    console.log(x);
+   ```
+   
+   ```
+     I like coke
+     I love coke
+     
+   ```
+    - here the replace() doesn't change the string in x variable
+    -it returns a new string
+   
