@@ -617,3 +617,20 @@ but comparing two objects will always return false
    
    ``` 
     
+   - ## concat()
+   - this method joins strings
+   
+   #### Example
+   
+   ```js
+    let x = "I want ";
+    let y = "R6";
+    let z = x.concat(y);
+    console.log(z);
+    
+   ```
+   
+   ```
+    output: I want R6
+    
+   ``` 
