@@ -483,3 +483,6 @@ but comparing two objects will always return false
   false
   false
 ```  
+
+## String methods
+ 
