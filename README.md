@@ -424,7 +424,25 @@ In JS strings are written inside quotes
  ```
  
  ```
- same quotes not allowed
+   same quotes not allowed
  
  ```
  
+ The soluion of the above problem is the backslash(\) **escape character**
+ 
+ ```js
+  let x = "Among the supercars \"Ferrari\" is the best";
+  let y = "It\'s the best";
+  let z = "Among the supercars \\Ferrari\\ is the best";
+  console.log(x);
+  console.log(y);
+  console.log(z);
+  
+ ```
+ 
+ ```
+  Among the supercars "Ferrari" is the best
+  It's the best
+  Among the supercars \Ferrari\ is the best
+
+ ```
