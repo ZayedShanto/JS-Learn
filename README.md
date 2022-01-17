@@ -508,3 +508,19 @@ but comparing two objects will always return false
  
   ```
     
+    
+   - ## substring()
+   - substring() is similar to slice() but it does not take negative indexes
+   
+   ```js
+    let x = "Apple, Banana, Kiwi";
+    let y = x.substring(7 , 13);
+    console.log(y);
+    
+   ```
+   
+   ```
+    output: banana
+    
+   ``` 
+    
