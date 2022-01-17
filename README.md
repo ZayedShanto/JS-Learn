@@ -561,6 +561,6 @@ but comparing two objects will always return false
      
    ```
     
-    - here the replace() doesn't change the string in x variable
-    - it returns a new string
+    -  here the replace() doesn't change the string in x variable
+    -  it returns a new string
    
