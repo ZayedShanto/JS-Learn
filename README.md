@@ -582,4 +582,20 @@ but comparing two objects will always return false
      I like pepsi and coke
    ```
     
+    
+   - ## toUpperCase()
+   - converts strings to upper case
    
+   #### Example
+   
+   ```js 
+    let x = "I like coke ";
+    let y = x.toUpperCase();
+    console.log(y);
+   
+   ```
+   
+   ```
+    output:I LIKE COKE 
+   
+   ``` 
