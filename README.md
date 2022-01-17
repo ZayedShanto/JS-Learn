@@ -634,3 +634,22 @@ but comparing two objects will always return false
     output: I want R6
     
    ``` 
+   - ## trim()
+   - this method removes white spaces from both sides of a string
+
+   #### EXample
+   
+   ```js
+    let x = "   I want R6   ";
+    let z = x.trim();
+
+    console.log(x.length);
+    console.log(z.length);
+    
+   ```
+   
+   ```
+   output:
+    15
+    9
+   ```
