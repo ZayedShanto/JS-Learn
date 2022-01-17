@@ -555,10 +555,12 @@ but comparing two objects will always return false
    ```
    
    ```
+    output:
      I like coke
      I love coke
      
    ```
+    
     - here the replace() doesn't change the string in x variable
-    -it returns a new string
+    - it returns a new string
    
