@@ -685,3 +685,49 @@ but comparing two objects will always return false
           ['Orange', 'Lemon', 'Apple', 'Mango']
   
   ```    
+
+#### for in vs for of
+-  for in loops over property names of an object.
+-  for of loops over values of an array
+
+#### Example for in 
+
+```js
+  let bike = {name:"R6", cc:600};
+  for (let x in bike){
+  console.log(x);
+  }
+  
+```
+
+```
+  output:
+   name
+   cc
+
+```
+    
+    
+    
+    
+#### Example for of
+
+```js
+  let bike = "yamaha";
+  for (let x of bike) {
+   console.log(x);
+  }
+  
+```
+
+```
+ output:
+    y
+    a
+    m
+    a
+    h
+    a
+ 
+```
+
