@@ -653,3 +653,35 @@ but comparing two objects will always return false
     15
     9
    ```
+#### splice() VS slice()
+-  splice() method can add/remove items from an array.It changes the main array
+-  slice() method can slice out a part from an array and returns new array.It does
+   not change the main array.
+   
+#### Example  splice()  
+  ```js
+   const fruits = ["Banana", "Orange", "Apple", "Mango"];
+   fruits.splice(2, 0, "Lemon", "Kiwi");
+   console.log(fruits);
+  
+  ```
+  
+  ```
+   output:['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+  
+  ```  
+  
+#### Example  slice()  
+  ```js
+   const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+   const citrus = fruits.slice(1);
+   console.log(fruits);
+   console.log(citrus);
+  
+  ```
+  
+  ```
+   output:['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
+          ['Orange', 'Lemon', 'Apple', 'Mango']
+  
+  ```    
