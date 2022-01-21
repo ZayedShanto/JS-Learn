@@ -1,7 +1,22 @@
 # JS-Learn
 
 # Contents
-[abcd](#js-statements)
+- [Output](#output)
+- [JS Values](#js-values)
+- [JS Expressions](#js-expressions)
+- [JS Statements](#js-statements)
+- [let](#let)
+- [var](#var)
+- [Block Scope](#block-scope)
+- [Redeclearing Variables](#redeclearing-variables)
+- [Redeclearing](#redeclearing)
+- [hoisting](#hoisting)
+- [const](#const)
+- [Function](#function)
+- [Function return](#function-return)
+- [splice() VS slice()](#splice()-vs-slice())
+- [for in vs for of](#for-in-vs-for-of)
+- [forEach() vs map()](#foreach()-vs-map())
 
 ## Output
 JS can display output in many ways.Some of them are:
