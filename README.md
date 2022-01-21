@@ -14,9 +14,9 @@
 - [const](#const)
 - [Function](#function)
 - [Function return](#function-return)
-- [splice() VS slice()](#splice()-vs-slice())
+- [splice() VS slice()](#splice-vs-slice)
 - [for in vs for of](#for-in-vs-for-of)
-- [forEach() vs map()](#foreach()-vs-map())
+- [forEach() vs map()](#foreach-vs-map)
 
 ## Output
 JS can display output in many ways.Some of them are:
