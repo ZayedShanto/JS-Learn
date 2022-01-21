@@ -731,3 +731,10 @@ but comparing two objects will always return false
  
 ```
 
+
+#### forEach() vs map()
+-  both can perform similar task
+-  the main difference is the callback function of map() can perform some task and return new array of same size
+
+
+
