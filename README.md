@@ -18,7 +18,7 @@
 - [for in vs for of](#for-in-vs-for-of)
 - [forEach() vs map()](#foreach-vs-map)
 
-## Output
+#### Output
 JS can display output in many ways.Some of them are:
 #### innerHTML
 -  document.getElementById(id) method of JS can access HTML element.
@@ -37,37 +37,37 @@ JS can display output in many ways.Some of them are:
   **Answer:** `output will be 11`
   
   
-  #### Example
+#### Example
   
-  ```js
+```js
   <p id="demo">abcd</p>
    <script>
     document.getElementById("demo").innerHTML = 6 + 6;
    </script>
   
-  ```
+```
    
-   **Answer:** `output will be 12`
+**Answer:** `output will be 12`
   
-  - ## document.write()
+#### document.write()
 
    
-   ```js
+```js
       <p> new doc</p>
      <script>
        document.write(11);
     </script>
 
 
-   ```
+```
   
   **Answer:**   
   
-  ```
+```
      new doc 
      11
      
-  ```   
+```   
   
 #### JS Values
       JS has two type of values
