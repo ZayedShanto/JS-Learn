@@ -1,14 +1,15 @@
 # JS-Learn
 
+# Contents
 [abcd](#js-statements)
 
 ## Output
 JS can display output in many ways.Some of them are:
-- ## innerHTML
-  document.getElementById(id) method of JS can access HTML element.
-  id attribute will the HTML element. The innerHTML property defines the HTML content:
+#### innerHTML
+-  document.getElementById(id) method of JS can access HTML element.
+-  id attribute will the HTML element. The innerHTML property defines the HTML content:
   
-  #### Example
+#### Example
   
   ```js
   <p id="demo"></p>
@@ -20,7 +21,8 @@ JS can display output in many ways.Some of them are:
   
   **Answer:** `output will be 11`
   
-   #### Example
+  
+  #### Example
   
   ```js
   <p id="demo">abcd</p>
@@ -29,10 +31,12 @@ JS can display output in many ways.Some of them are:
    </script>
   
   ```
+   
    **Answer:** `output will be 12`
   
   - ## document.write()
 
+   
    ```js
       <p> new doc</p>
      <script>
@@ -49,80 +53,77 @@ JS can display output in many ways.Some of them are:
      11
      
   ```   
-   - ## JS Values
+  
+#### JS Values
       JS has two type of values
      
-      - fixed values
-      - variable values
+ -  fixed values
+ -  variable values
+ -  Fixed values are called **Literals** .
+ -  Variable values are called **Variables** .
                
-     -  Fixed values are called **Literals** .
-      - Variable values are called **Variables** .
                
-               
-## JS Expressions
- An expression is a combination of values, variables, and operators, which computes to a value.
- JS expressions can not contain keywords like var,let,const
-   #### Example
-  
-  ```js
- <p id="demo"></p>
- <script>
- document.getElementById("demo").innerHTML = 5 * 10;
- </script>
-
-
-  
-  ```
-  
-  
-  ## JS Statements
-   JavaScript statements are contains:
-   Values, Operators, Expressions, Keywords, and Comments.
-   Statements can contain  expressions
+#### JS Expressions
+-  An expression is a combination of values, variables, and operators, which computes to a value.
+-  JS expressions can not contain keywords like var,let,const
    
-  #### Example
+#### Example
   
   ```js
-  <p id="demo"></p>
-  <script>
-  document.getElementById("demo").innerHTML = "Hello Dolly.";
-  </script>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = 5 * 10;
+    </script>
+
+   ```
+  
+  
+#### JS Statements
+   JavaScript statements  contains:
+-  Values, Operators, Expressions, Keywords, and Comments.
+-  Statements can contain  expressions
+   
+#### Example
+  
+  ```js
+   <p id="demo"></p>
+   <script>
+   document.getElementById("demo").innerHTML = "Hello Dolly.";
+   </script>
 
   ```
   
-  ## JS Variables
-   - ## let variable
-   - Variables defined with let cannot be redeclared.
+####  let
+-  Variables defined with let cannot be redeclared.
   
-     #### Example
+#### Example
   
   ```js
    let x = "Iron Man";
 
    let x = 0;
 
-   // SyntaxError: 'x' has already been declared
+    // SyntaxError: 'x' has already been declared
 
   ```
   
-   - ## var variable
-   - Variables defined with var can be redeclared.
+#### var 
+-  Variables defined with var can be redeclared.
   
-     #### Example
+#### Example
   
   ```js
    var x = "Iron Man";
 
    var x = 0; //allowed
 
-   
-
   ```
   
-  ## JS Block Scope
-  Variables declared inside a { } block cannot be accessed from outside the block:
   
-   #### Example
+####  Block Scope
+-  Variables declared inside a { } block cannot be accessed from outside the block:
+  
+#### Example
   
   ```js
     let x = 4;
@@ -134,6 +135,7 @@ JS can display output in many ways.Some of them are:
     console.log(x);
 
   ```
+   
    **Answer:**   
   
   ```
@@ -141,8 +143,11 @@ JS can display output in many ways.Some of them are:
      4
      
   ``` 
-  Variables declared inside a { } block can be accessed from outside the block.
-  #### Example
+  
+  
+-  Variables declared inside a { } block can be accessed from outside the block.
+  
+#### Example
   
   ```js
    { 
@@ -151,13 +156,14 @@ JS can display output in many ways.Some of them are:
     // x CAN be used here
 
   ```
-  ## Redeclearing Variables
-  Redeclaring a variable using the var keyword can create problems.
-  Redeclaring a variable inside a block will also redeclare the variable outside the block
   
-   #### Example
+#### Redeclearing Variables
+-  Redeclaring a variable using the var keyword can create problems.
+-  Redeclaring a variable inside a block will also redeclare the variable outside the block
   
-  ```js
+#### Example
+  
+```js
   var  x = 10;
   console.log(x);
 
@@ -167,18 +173,21 @@ JS can display output in many ways.Some of them are:
   }
    console.log(x);
 
-  ```
-  **Answer:**   
+```
   
-  ```
+**Answer:**   
+  
+```
      10
      2
      
-  ``` 
-  Redeclaring a variable using the let keyword will fix this problem.
-   #### Example
+``` 
   
-  ```js
+-  Redeclaring a variable using the let keyword will fix this problem.
+  
+#### Example
+  
+```js
     let  x = 10;
     console.log(x);
 
@@ -188,36 +197,39 @@ JS can display output in many ways.Some of them are:
     }
     console.log(x);
 
-  ```
-  **Answer:**   
+```
   
-  ```
+**Answer:**   
+  
+```
      10
      2
      10
      
-  ```
-  ## Redeclearing 
-   var can be redeclearedis  anywhere in a program
+```
+
+
+#### Redeclearing 
+-  var can be redeclearedis  anywhere in a program
   
   
-  #### Example
+#### Example
     
     
-    ```js
+```js
      var x = 2;
      // Now x is 2
 
       var x = 3;
       // Now x is 3
 
-     ```
+```
    redeclaring let in the same block is NOT allowed
    
-   #### Example
+#### Example
    
    
-     ```js
+```js
       var x = 2;    // Allowed
       let x = 3;    // Not allowed
 
@@ -231,120 +243,129 @@ JS can display output in many ways.Some of them are:
         var x = 3     // Not allowed
         }
 
-     ```
+```
    
-   ## let hoisting
-   Variables defined with var,const and let are hoisted to the top.But var can only be initialized at any time.
-   Meaning: the variable can be used  before it is declared.
+#### hoisting
+-  Variables defined with var,const and let are hoisted to the top.But var can only be initialized at any time.
+-  Meaning: the variable can be used  before it is declared.
    
-   #### Example
-    ```js
+#### Example
+    
+```js
       carName = "volvo";
       var carName;
       console.log(carName);
-    ```
+    
+```
      
-   **Answer:**   
+**Answer:**   
   
-  ```
-     volvo
+```
+   volvo
      
-  ```
-  this is possible because var is hoisted to the top and initialize a default value **undefined**
+```
+  
+-  this is possible because var is hoisted to the top and initialize a default value **undefined**
   **undefined** is a is a property of the global object.That is, it is a variable in global scope.
   The initial value of **undefined** is the **primitive** value undefined.
   But let and const are not initialized like var.
   
-   #### Example
-     ```js
+#### Example
+     
+```js
       carName = "volvo";
       let carName;
       console.log(carName);
 
-     ```
-   **Answer:**   
+```
+**Answer:**   
   
-  ```
+
+```
      ReferenceError
      
-  ```
+```
   
-   #### Example
-     ```js
+#### Example
+     
+```js
       carName = "volvo";
       let carName;
       console.log(carName);
 
-     ```
-   **Answer:**   
+```
+   
+**Answer:**   
   
-  ```
-     synta error
+```
+  syntax error
      
-  ```
+```
   
-  ## const variable
-  const is similar to let variable.but it must be assigned at time of declaration.const can not be reassigned .
+#### const 
+-  const is similar to let variable.but it must be assigned at time of declaration.const can not be reassigned .
   
-  #### Example
+#### Example
   
-  ```js
+```js
   const x = 2;
   const y = 3;
   const z = x+y;
   z = 10
   console.log(z);
   
-  ```
+```
   
-  ```
+  
+```
    Uncaught TypeError: Assignment to constant variable
   
-  ```
+```
 
 
-  ## Function
-  function is a block of code.It can perform particular task. It has to be called to perform.
+#### Function
+-  function is a block of code.It can perform particular task. It has to be called to perform.
   
-  #### Example
+#### Example
   
-  ```js
+```js
   function sleep(){
     console.log("xyz");
   }
   sleep();
  
- ```
+```
  
- ```
+```
   outout: xyz
   
- ``` 
+``` 
  
- variables inside function parentheses () are called **parameters**. And values received by function when it is invoked is **arguments**
+-  variables inside function parentheses () are called **parameters**. And values received by function when it is invoked is **arguments**
  
- #### Example
+#### Example
  
- ```js
+```js
  function sleep(x, y){
     console.log(x);
  }
 
  sleep(5);
  
- ```
- ```
+```
+
+```
   here x and y are parameters 
   and 5 is the argement
  
- ```
+```
  
- ## Function return
- inside function when JS reaches **return** statement it stops executing.
+#### Function return
+-  inside function when JS reaches **return** statement it stops executing.
  
- #### Example
+#### Example
  
- ```js
+```js
   function sleep(x, y){
     return x*y;
     console.log("hello");
@@ -358,18 +379,19 @@ JS can display output in many ways.Some of them are:
 ```
   output: 25
   
-```  
-If return statement is not added inside function by default it returns **undefined** and exits from function
+``` 
+
+-  If return statement is not added inside function by default it returns **undefined** and exits from function
 
 #### Example
 
 ```js
-function sleep(x, y){
+  function sleep(x, y){
     console.log("hello");
-}
+  }
 
-let x = sleep(5,5);
-console.log(x);
+  let x = sleep(5,5);
+  console.log(x);
 
 ```
 
@@ -379,7 +401,7 @@ console.log(x);
 ``` 
 
 
-## Object
+#### Object
 
 #### Example
 
@@ -407,10 +429,11 @@ R15
 bike has started
 
 ```
-here bike is the object
-properties:name,model,color
 
-## Events
+-  here bike is the object
+-  properties:name,model,color
+
+
 
 ## Strings 
 In JS strings are written inside quotes
