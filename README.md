@@ -497,5 +497,41 @@ JS can display output in many ways.Some of them are:
 -  both can perform similar task
 -  the main difference is the callback function of map() can perform some task and return new array of same size
 
+#### Example
+
+```js
+  
+  const numbers = [45, 4, 9, 16, 25];
+  numbers.forEach(myFunction);
+
+  function myFunction(value, index, array) {
+     array[index] = value * 2;
+  }
+
+
+  const numbers1 = [45, 4, 9, 16, 25];
+  //numbers1.map(myFunction1);
+  const numbers2 = numbers1.map(myFunction1);
+
+  function myFunction1(value, index, array) {
+   return  array[index] = value * 2;
+  }
+
+  console.log(numbers);
+  console.log(numbers1);
+  console.log(numbers2);
+  
+
+```
+
+```
+  
+  Output:
+  [90, 8, 18, 32, 50]
+  [90, 8, 18, 32, 50]
+  [90, 8, 18, 32, 50]
+  
+
+```
 
 
