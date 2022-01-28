@@ -17,6 +17,7 @@
 - [splice() VS slice()](#splice-vs-slice)
 - [for in vs for of](#for-in-vs-for-of)
 - [forEach() vs map()](#foreach-vs-map)
+- [Closures](#closures)
 
 #### Output
 JS can display output in many ways.Some of them are:
@@ -534,4 +535,57 @@ JS can display output in many ways.Some of them are:
 
 ```
 
+#### Closures
+-  Closure is a combination of functions. It can give access to outer function scope to inner function scope.
+-  When a function is created a closure is also created
+-  it protects data from accessing outside from function
+
+#### Example
+```js
+
+     function bankAccount(balance){
+      var b = balance;
+      return function(){
+        return b;
+      };
+    }
+    var account = bankAccount('1000T');
+    console.log(account());
+    console.log(b);
+
+```
+
+```
+   output:
+   1000T
+   Uncaught ReferenceError: b is not defined
+   
+```
+
+-  here b can not be accessed directly.
+
+-  closure holds the reference of the variables. It impacts asynchronous function greatly
+
+#### Example
+
+```js
+ 
+ let a;
+function async(){
+  a = 20;
+  var myFunc = () =>{
+      console.log(a);
+  };
+ setTimeout(myFunc, 3000);
+}
+async();
+a = 30; 
+   
+```
+
+```
+  output:
+  30
+
+```
 
