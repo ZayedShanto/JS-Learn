@@ -18,6 +18,7 @@
 - [for in vs for of](#for-in-vs-for-of)
 - [forEach() vs map()](#foreach-vs-map)
 - [Closures](#closures)
+- [Prototype Inheritance](#prototype-inheritance)
 
 #### Output
 JS can display output in many ways.Some of them are:
@@ -589,3 +590,46 @@ a = 30;
 
 ```
 
+
+#### Prototype Inheritance
+It requires 3 things:
+-  constructor overwrite
+-  prototype inheritance using Object.create()
+-  this connection 
+
+```js
+  
+  function Person(name, age){
+      this.name = name;
+      this.age = age;
+  }
+  function Avenger(name, age, type, country){
+        Person.call(this); //this connection
+        this.name = name;
+        this.age = age;
+        this.type = type;
+        this.country = country;
+  }
+  Person.prototype = {
+      fight: function(){
+          console.log(`${this.name} is fighting`);
+      },
+  }
+
+  Avenger.prototype = Object.create(Person.prototype); //prototype inheritance
+  Avenger.prototype.constructor = Avenger; //constructor overwrite
+
+  let tony = new Avenger("stark", 35, "ironman", "USA");
+  let steve = new Avenger("rogers", 100, "captain", "USA");
+  tony.fight();
+  steve.fight();
+
+
+```
+
+```
+   Output:
+   stark is fighting
+   rogers is fighting
+
+```
